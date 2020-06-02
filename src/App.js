@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import Lyrics from "./Lyrics";
+import Lyrics from "./components/Lyrics";
 import axios from "axios";
 
 class App extends Component {
@@ -10,6 +10,8 @@ class App extends Component {
     this.state = {
       artist: "",
       song: "",
+      results: null,
+      lyrics: "",
     };
   }
   handleChange = (e) => {
@@ -23,15 +25,31 @@ class App extends Component {
     let results = await axios.get(
       `https://orion.apiseeds.com/api/music/lyric/${this.state.artist}/${this.state.song}?apikey=OEOsB3dM7mbVzGgWY78cl3uRUBm3gCj3em3NLARPKhkW3Lm5ydxgODkSaGDpHx7Q`
     );
-    console.log(results);
+    
+    this.setState({
+      results: results.data.result,
+    });
+    console.log(results.data);
   };
   render() {
+    console.log(this.state.results);
     return (
       <div className="App">
         <Lyrics
           handleChange={this.handleChange}
           handleClick={this.handleClick}
         />
+        {this.state.results && <h1>{this.state.results.artist.name}</h1>}
+        {this.state.results && (
+          <div>
+            <h1>{this.state.results.track.name}</h1>
+          </div>
+        )}
+        {this.state.results && (
+          <div className="lyricsClass">
+            <h2>{this.state.results.track.text}</h2>
+          </div>
+        )}
       </div>
     );
   }

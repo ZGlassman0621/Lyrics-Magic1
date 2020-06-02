@@ -5,12 +5,14 @@ export default function Lyrics(props) {
     <div>
       <input
         type="text"
+        class="artistName"
         placeholder="Artist Name"
         name="artist"
         onChange={props.handleChange}
       />
       <input
         type="text"
+        class="songTitle"
         placeholder="Song Title"
         name="song"
         onChange={props.handleChange}
