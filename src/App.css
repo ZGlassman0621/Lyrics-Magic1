@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: gold;
+  background-blend-mode: darken;
 }
 
 .lyricsClass {
@@ -7,5 +9,5 @@
 }
 
 input {
-  
+
 }
