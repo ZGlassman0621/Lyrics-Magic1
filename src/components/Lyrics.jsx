@@ -1,8 +1,11 @@
 import React from "react";
+import "./Lyrics.css";
 
 export default function Lyrics(props) {
   return (
-    <div>
+    <div className="field">
+      <h1 className="title">Welcome to Lyrics Magic</h1>
+      <br></br>
       <input
         type="text"
         class="artistName"
@@ -10,6 +13,8 @@ export default function Lyrics(props) {
         name="artist"
         onChange={props.handleChange}
       />
+      <br></br>
+      <br></br>
       <input
         type="text"
         class="songTitle"
@@ -17,7 +22,9 @@ export default function Lyrics(props) {
         name="song"
         onChange={props.handleChange}
       />
-      <button onClick={props.handleClick}>Submit</button>
+      <br></br>
+      <br></br>
+      <button className="button" onClick={props.handleClick}>Submit</button>
     </div>
   );
 }

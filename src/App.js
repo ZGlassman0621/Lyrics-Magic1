@@ -4,7 +4,14 @@ import Lyrics from "./components/Lyrics";
 import axios from "axios";
 import ReactBreakpoints from "react-breakpoints";
 import ReactDOM from "react-dom";
-import Welcome from "./components/Welcome";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  Redirect
+} from "react-router-dom";
+import MainPage from "./components";
 
 class App extends Component {
   constructor() {
@@ -53,6 +60,9 @@ class App extends Component {
             <h2>{this.state.results.track.text}</h2>
           </div>
         )}
+          <Router>
+            <Route exact path=".src/components/index.jsx" component={MainPage} />
+        </Router>
       </div>
     );
   }

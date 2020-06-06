@@ -1,9 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 
-export default function EnterButton(props) {
-  return (
-    <div
-      class="button"><span>Enter</span>
-    </div>
-  )
+
+class EnterButton extends Component {
+  render() {
+    return (
+      <div></div>
+    )
+  }
 }
+
+export default EnterButton;

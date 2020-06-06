@@ -1,24 +1,9 @@
 .App {
   text-align: center;
-  background: linear-gradient(to right, #0c4b68, #38ef7d);
+  background: linear-gradient(to right, #016391, #09f363);
 }
 
 .lyricsClass {
   white-space: pre-wrap;
 }
 
-input {
-}
-
-/* .field {
-  width: 100%;
-  height: 56px;
-  border-radius: 4px;
-  position: relative;
-  background-color: rgba(255,255,255,0.3);
-  transition: 0.3s all;
-}
-.field:hover {
-  background-color: rgba(255, 255, 255, 0.45);
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
-} */

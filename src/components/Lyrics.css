@@ -1,0 +1,45 @@
+.field {
+  width: 100%;
+  border-radius: 4px;
+  padding: 10em 4px;
+  background-color: rgba(27, 255, 113, 0.15);
+  transition: 0.3s all;
+}
+input:focus {
+  box-shadow: 0 0 50px #a6f061;
+}
+
+::placeholder {
+  color: black;
+  text-align: center;
+}
+
+.button {
+  background-color: #a6f061;
+  text-align: center;
+  font-size: 18px;
+}
+
+.button:hover {
+
+}
+
+.field input {
+  width: 40%;
+  height: 56px;
+  display: block;
+  padding: 0px 16px;
+  text-align: center;
+  margin: auto;
+  border-radius: 90px;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
+  outline: none;
+  box-shadow: 0;
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out,
+    0.1s padding ease-in-out;
+  -webkit-appearance: none;
+}

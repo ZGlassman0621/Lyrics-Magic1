@@ -1,9 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 
-export default function Lyrics(props) {
-  return (
-    <div>
 
-    </div>
-  )
+class Header extends Component {
+  render() {
+    return (
+      <div></div>
+    )
+  }
 }
+
+export default Header;
