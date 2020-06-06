@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./App.css";
 import Lyrics from "./components/Lyrics";
 import axios from "axios";
+import ReactBreakpoints from "react-breakpoints";
+import ReactDOM from "react-dom";
+import Welcome from "./components/Welcome";
 
 class App extends Component {
   constructor() {
@@ -25,7 +28,7 @@ class App extends Component {
     let results = await axios.get(
       `https://orion.apiseeds.com/api/music/lyric/${this.state.artist}/${this.state.song}?apikey=OEOsB3dM7mbVzGgWY78cl3uRUBm3gCj3em3NLARPKhkW3Lm5ydxgODkSaGDpHx7Q`
     );
-    
+
     this.setState({
       results: results.data.result,
     });
@@ -56,3 +59,20 @@ class App extends Component {
 }
 
 export default App;
+
+const breakpoints = {
+  mobile: 320,
+  mobileLandscape: 480,
+  tablet: 768,
+  tabletLandscape: 1024,
+  desktop: 1200,
+  desktopLarge: 1500,
+  desktopWide: 1920,
+};
+
+ReactDOM.render(
+  <ReactBreakpoints breakpoints={breakpoints}>
+    <App />
+  </ReactBreakpoints>,
+  document.getElementById("root")
+);

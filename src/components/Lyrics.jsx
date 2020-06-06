@@ -17,9 +17,7 @@ export default function Lyrics(props) {
         name="song"
         onChange={props.handleChange}
       />
-      <button onClick={props.handleClick}>
-        Submit
-      </button>
+      <button onClick={props.handleClick}>Submit</button>
     </div>
   );
 }
