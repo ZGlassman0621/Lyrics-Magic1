@@ -6,11 +6,11 @@ export default function Lyrics(props) {
     <div className="field">
       <div>
         <header className="title">
-          <h1>Lyrics Magic</h1>
-          <p>
+          <h1 className="mainTitle">Lyrics Magic</h1>
+          <h3>
             Find your favorite lyrics by entering the artist and the name of the
             song below
-          </p>
+          </h3>
         </header>
       </div>
       <br></br>

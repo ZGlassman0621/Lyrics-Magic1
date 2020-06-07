@@ -7,10 +7,11 @@ function NavBar() {
     <nav className="navbar">
       <ul className="navbar-links">
         <Link to="/">
-        <li className="navbar-home">Home</li>
+          <li className="navbar-home">Home</li>
         </Link>
-        <li className="navbar-about">About</li>
-        <li className="navbar-search">Lyrics</li>
+        <Link to="./About">
+          <li className="navbar-about">About</li>
+        </Link>
       </ul>
     </nav>
   );

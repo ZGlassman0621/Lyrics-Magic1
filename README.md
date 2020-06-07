@@ -89,9 +89,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |  Day | Deliverable | Status
 |---|---| ---|
 |June 1| Pitch, Working API Call, 75%+ Pseudo | Done |
-|June 2| Storybook components, basic HTML layout, 25%- Pseudo, basic CSS | Done |
+|June 2| Storybook components (no longer required), basic HTML layout, 25%- Pseudo, basic CSS | Done |
 |June 3| Partially functioning React app, most MVPs deployed | Done |
-|June 4| All MVPs deployed, Post-MVP work 50-75% done (if I can figure them out), finalized CSS and HTML components, fully functioning app
+|June 4| All MVPs deployed, Post-MVP work 50-75% done (if I can figure them out), finalized CSS and HTML components, fully functioning app | Done |
 |June 5| Deployed MVP and Presentation
 
 ## Priority Matrix
@@ -106,14 +106,38 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| JSX | M-H | 6hrs|  |  |
-| CSS | H | 6hrs|  |  |
-| React | H | 10hrs|  |  |
-| MVP Requirements | H | 6hrs 
-| Testing, debugging | H | 6hrs|  |  |
-| Post-MVP | M-L | 5hrs|  |  |
-| Total |  | 39hrs|  |  |
+| JSX | M-H | 6hrs| 14hrs  |  |
+| CSS | H | 6hrs| 16hrs  |  |
+| React | H | 10hrs| 14hrs  |  |
+| React Router | M | 8hrs | 12hrs |
+| MVP Requirements | H | 6hrs | 18-22hrs |
+| Testing, debugging | H | 6hrs| 6hrs |  |
+| Post-MVP | M-L | 5hrs| 5hrs |  |
+| Total |  | 39hrs| 87hrs |  |
 
 ## Code Snippet
+
+Maybe a silly little thing, but getting the site from drab to exciting really made me happy. Using not just the gradient background but also the semi-transparent text was very cool to do and gave me a great sense of really owning the project.
+
+.App {
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgba(7, 1, 32, 1) 0%,
+    rgba(9, 9, 121, 1) 37%,
+    rgba(20, 154, 255, 1) 100%
+  );
+  background-size: cover;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  color: #aeb6c4;
+  margin-top: auto;
+  box-sizing: border-box;
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 ## Change Log

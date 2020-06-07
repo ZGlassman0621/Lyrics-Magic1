@@ -15,6 +15,7 @@ import {
 import NavBar from "./components/Navigation Bar/Navigation.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import LyricPage from "./components/Lyric Page/LyricPage";
+import About from "./components/Navigation Bar/About";
 
 class App extends Component {
   constructor() {
@@ -60,6 +61,9 @@ class App extends Component {
           <Route path="/Lyrics" exact>
             <LyricPage results={this.state.results} />
           </Route>
+          <Route path="/About" exact>
+            <About />
+          </Route>
         </div>
         <Footer />
       </div>
@@ -68,20 +72,3 @@ class App extends Component {
 }
 
 export default withRouter(App);
-
-// const breakpoints = {
-//   mobile: 320,
-//   mobileLandscape: 480,
-//   tablet: 768,
-//   tabletLandscape: 1024,
-//   desktop: 1200,
-//   desktopLarge: 1500,
-//   desktopWide: 1920,
-// };
-
-// ReactDOM.render(
-//   <ReactBreakpoints breakpoints={breakpoints}>
-//     <App />
-//   </ReactBreakpoints>,
-//   document.getElementById("root")
-// );

@@ -17,10 +17,15 @@ input:focus {
   border-radius: 15px;
   text-align: center;
   font-size: 18px;
-  width: 15%;
+  width: 22%;
   height: 36px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.mainTitle {
+  font-size: 36px;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
 }
 
 .field input {
