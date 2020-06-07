@@ -1,27 +1,26 @@
 .field {
   width: 100%;
   border-radius: 4px;
-  padding: 10em 4px;
-  background-color: rgba(27, 255, 113, 0.15);
-  transition: 0.3s all;
+  transition: 0.5s all;
 }
 input:focus {
-  box-shadow: 0 0 50px #a6f061;
+  box-shadow: 0 0 10px 10px #0bde23;
 }
 
 ::placeholder {
-  color: black;
+  color: rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
 .button {
-  background-color: #a6f061;
+  background: linear-gradient(90deg, #fcfdfd 0%, #c0d5fa 100%);
+  border-radius: 15px;
   text-align: center;
   font-size: 18px;
-}
-
-.button:hover {
-
+  width: 15%;
+  height: 36px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .field input {
@@ -34,12 +33,13 @@ input:focus {
   border-radius: 90px;
   font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  background: linear-gradient(90deg, #fcfdfd 0%, #c0d5fa 100%);
+  font-weight: 600;
   line-height: normal;
-  background-color: transparent;
+  /* background-color: transparent; */
   outline: none;
   box-shadow: 0;
-  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out,
+  transition: 0.8s background-color ease-in-out, 0.8s box-shadow ease-in-out,
     0.1s padding ease-in-out;
   -webkit-appearance: none;
 }

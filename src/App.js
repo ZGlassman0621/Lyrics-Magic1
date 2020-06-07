@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import Lyrics from "./components/Lyrics";
+import Lyrics from "./components/Navigation Bar/Lyrics";
 import axios from "axios";
 import ReactBreakpoints from "react-breakpoints";
 import ReactDOM from "react-dom";
@@ -9,9 +9,12 @@ import {
   Route,
   Switch,
   Link,
-  Redirect
+  Redirect,
+  withRouter,
 } from "react-router-dom";
-import MainPage from "./components";
+import NavBar from "./components/Navigation Bar/Navigation.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import LyricPage from "./components/Lyric Page/LyricPage";
 
 class App extends Component {
   constructor() {
@@ -39,50 +42,46 @@ class App extends Component {
     this.setState({
       results: results.data.result,
     });
-    console.log(results.data);
+    this.props.history.push("/Lyrics");
   };
   render() {
-    console.log(this.state.results);
     return (
       <div className="App">
-        <Lyrics
-          handleChange={this.handleChange}
-          handleClick={this.handleClick}
-        />
-        {this.state.results && <h1>{this.state.results.artist.name}</h1>}
-        {this.state.results && (
-          <div>
-            <h1>{this.state.results.track.name}</h1>
+        <div className="blank">
+          <div className="NavBar">
+            <NavBar />
           </div>
-        )}
-        {this.state.results && (
-          <div className="lyricsClass">
-            <h2>{this.state.results.track.text}</h2>
-          </div>
-        )}
-          <Router>
-            <Route exact path=".src/components/index.jsx" component={MainPage} />
-        </Router>
+          <Route path="/" exact>
+            <Lyrics
+              handleChange={this.handleChange}
+              handleClick={this.handleClick}
+            />
+          </Route>
+          <Route path="/Lyrics" exact>
+            <LyricPage results={this.state.results} />
+          </Route>
+        </div>
+        <Footer />
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
 
-const breakpoints = {
-  mobile: 320,
-  mobileLandscape: 480,
-  tablet: 768,
-  tabletLandscape: 1024,
-  desktop: 1200,
-  desktopLarge: 1500,
-  desktopWide: 1920,
-};
+// const breakpoints = {
+//   mobile: 320,
+//   mobileLandscape: 480,
+//   tablet: 768,
+//   tabletLandscape: 1024,
+//   desktop: 1200,
+//   desktopLarge: 1500,
+//   desktopWide: 1920,
+// };
 
-ReactDOM.render(
-  <ReactBreakpoints breakpoints={breakpoints}>
-    <App />
-  </ReactBreakpoints>,
-  document.getElementById("root")
-);
+// ReactDOM.render(
+//   <ReactBreakpoints breakpoints={breakpoints}>
+//     <App />
+//   </ReactBreakpoints>,
+//   document.getElementById("root")
+// );

@@ -1,68 +1,119 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Lyric Magic!
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+Find All Lyrics! I admit, Innagadadavida, still confuses the hell out of me. This project allows you to look up lyrics through an API and, as post-mvp, listen to a imbedded link of the song on Spotify.
 
-### `npm start`
+## API and Data Sample
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+API Key: OEOsB3dM7mbVzGgWY78cl3uRUBm3gCj3em3NLARPKhkW3Lm5ydxgODkSaGDpHx7Q
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+https://orion.apiseeds.com/api/
 
-### `npm test`
+{
+  "result": {
+    "artist": {
+      "name": "Steely Dan"
+    },
+    "track": {
+      "name": "Don't Take Me Alive",
+      "text": "Agents of the law \nLuckless pedestrian \nI know you're out there \nWith rage in your eyes and your megaphones \nSaying all is forgiven \nMad Dog surrender \nHow can I answer \nA man of my mind can do anything \nCHORUS:\nI'm a bookkeeper's son \nI don't want to shoot no one \nWell I crossed my old man back in Oregon \nDon't take me alive \nGot a case of dynamite \nI could hold out here all night \nYes I crossed my old man back in Oregon \nDon't take me alive \n\nCan you hear the evil crowd \nThe lies and the laughter \nI hear my inside \nThe mechanized hum of another world \nWhere no sun is shining \nNo red light flashing \nHere in this darkness \nI know what I've done \nI know all at once who I am \n\nCHORUS\n",
+      "lang": {
+        "code": "en",
+        "name": "English"
+        
+Potential use of Spotify (not an API, just a reference link):
+https://developer.spotify.com/documentation/web-playback-sdk/quick-start/
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Wireframes
 
-### `npm run build`
+See Repo for Wireframe
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### MVP/PostMVP
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### PERSONAL MVP
 
-### `npm run eject`
+- A lyric finder through which users can search for song lyrics by artist and song
+- An easy-to-use interface that reflects both the theme of the project and the style
+- Site code that can be expanded upon after the completion of the project (easy to read, dry, organized, possibly with comments to future-Zach)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### MVP COPIED FROM PROJECT README
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+*Planning*
+Have a thoroughly developed README.md file. (Refer below to "Step 5: Pitch Your Project Idea" for more.)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+*React*
+Be a working, interactice React app, built using create-react-app. Make sure that the React app is at the root of your repository and not in a nested folder.
+Utilize React Router, installed via NPM.
+Have at least 6 separate, rendered components.
+Implement an organized and understandable React file structure.
+Utilize functional and class React components appropriately.
+Use Axios to consume data from an third party API, and render that data in your components. (Remember, many lists of good API's are listed in the #Resources section.)
+Use only React for DOM Manipulation.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+*Styling*
+Be styled with CSS, either using global style sheets or styled components.
+Use flexbox (display: flex) or CSS Grid.
+Implement responsive design on 3 screen sizes (including desktop) using 2 media queries (tablet and mobile).
 
-## Learn More
+*Linting*
+Indent properly.
+Utilize high-quality, semantic variable names.
+Follow camelCase and kebab-case conventions.
+Remove unnecessary boilerplate React files and code.
+Remove all console.log()s and commented out code (functional notes and comments are okay).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+*Deployment*
+Deployed via Surge or Netlify.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+*Procedural*
+Commit early and often! Have GitHub commits (documenting substantial progress) every day.
 
-### Code Splitting
+*Dealer's Choice*
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Utilize Storybook to create at least 5 reusable components, which are then used in your project
 
-### Analyzing the Bundle Size
+#### PostMVP  
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- I would like to be able to institute an age gate for viewing explicit material
+- Make an additional mini-project of a "what are the missing lyrics" game
 
-### Making a Progressive Web App
+## Project Schedule
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
 
-### Advanced Configuration
+You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+|  Day | Deliverable | Status
+|---|---| ---|
+|June 1| Pitch, Working API Call, 75%+ Pseudo | Done |
+|June 2| Storybook components, basic HTML layout, 25%- Pseudo, basic CSS | Done |
+|June 3| Partially functioning React app, most MVPs deployed | Done |
+|June 4| All MVPs deployed, Post-MVP work 50-75% done (if I can figure them out), finalized CSS and HTML components, fully functioning app
+|June 5| Deployed MVP and Presentation
 
-### Deployment
+## Priority Matrix
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Find Priority Matrix in the Repo
 
-### `npm run build` fails to minify
+## Timeframes
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
+
+Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
+
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| JSX | M-H | 6hrs|  |  |
+| CSS | H | 6hrs|  |  |
+| React | H | 10hrs|  |  |
+| MVP Requirements | H | 6hrs 
+| Testing, debugging | H | 6hrs|  |  |
+| Post-MVP | M-L | 5hrs|  |  |
+| Total |  | 39hrs|  |  |
+
+## Code Snippet
+
+## Change Log

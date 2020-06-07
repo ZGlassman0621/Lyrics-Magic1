@@ -1,0 +1,27 @@
+.Footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  z-index: 1;
+  bottom: 0;
+  background-size: cover;
+}
+.footer-home {
+  list-style-type: none;
+}
+.footer-about {
+  list-style-type: none;
+}
+
+.footer-search {
+  list-style-type: none;
+}
+
+.footer-rights {
+  position: relative;
+}
+
+.footer-notes {
+  padding-bottom: 2.5rem;
+}
