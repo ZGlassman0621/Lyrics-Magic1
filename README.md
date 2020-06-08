@@ -4,6 +4,8 @@
 
 Find All Lyrics! I admit, Innagadadavida, still confuses the hell out of me. This project allows you to look up lyrics through an API and, as post-mvp, listen to a imbedded link of the song on Spotify.
 
+Before I begin, I would like to thank Dan, Nikita, Kelly, Colin, Zain, Gerand and Mike for all the help they gave me. I know they'll probably never see this readme, but their help is certainly worth this shout-out.
+
 ## API and Data Sample
 
 API Key: OEOsB3dM7mbVzGgWY78cl3uRUBm3gCj3em3NLARPKhkW3Lm5ydxgODkSaGDpHx7Q
@@ -22,8 +24,6 @@ https://orion.apiseeds.com/api/
         "code": "en",
         "name": "English"
         
-Potential use of Spotify (not an API, just a reference link):
-https://developer.spotify.com/documentation/web-playback-sdk/quick-start/
 
 ## Wireframes
 
