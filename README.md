@@ -8,8 +8,6 @@ Before I begin, I would like to thank Dan, Nikita, Kelly, Colin, Zain, Gerand an
 
 ## API and Data Sample
 
-API Key: OEOsB3dM7mbVzGgWY78cl3uRUBm3gCj3em3NLARPKhkW3Lm5ydxgODkSaGDpHx7Q
-
 https://orion.apiseeds.com/api/
 
 {
